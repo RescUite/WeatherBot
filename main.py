@@ -2,7 +2,7 @@ import asyncio
 import logging
 
 from aiogram import Dispatcher, Bot
-from handler import start, weather
+from handler import start, weather, thanks
 from config import settings
 from utils.commands import set_up_default_commands
 
@@ -17,6 +17,7 @@ dp = Dispatcher()
 dp.include_routers(
     start.router,
     weather.router,
+    thanks.router,
 )
 
 
