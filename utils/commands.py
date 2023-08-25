@@ -6,7 +6,7 @@ async def set_up_default_commands(bot: Bot):
         [
             types.BotCommand(
                 command="/start",
-                description="Начать взаимодействие с ботом",
+                description="Запустить бота",
             ),
             types.BotCommand(
                 command="/weather",
@@ -14,4 +14,3 @@ async def set_up_default_commands(bot: Bot):
             )
         ]
     )
-    
